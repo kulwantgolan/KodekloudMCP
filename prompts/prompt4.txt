@@ -1,0 +1,11 @@
+"Using the Terraform MCP server:
+
+1. Create /root/terraform-project/secure-security-groups.tf with fixed Security Groups
+2. Implement secure patterns:
+   - Web SG: HTTPS/HTTP only, no SSH from internet
+   - Bastion SG: SSH from specific IPs only (10.0.0.0/8)
+   - App SG: Traffic from Web SG only
+   - DB SG: Traffic from App SG only
+3. Run Checkov validation and save results to /root/terraform-project/sg-validation.txt
+
+Use the awslabs.terraform-mcp-server tools."

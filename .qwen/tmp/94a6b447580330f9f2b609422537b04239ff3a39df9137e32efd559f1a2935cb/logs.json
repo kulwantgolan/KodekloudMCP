@@ -19,5 +19,12 @@
     "type": "user",
     "message": "\"Using the Terraform MCP server:\n\n1. Analyze Security Groups in /root/terraform-project/main.tf\n2. Run Checkov to scan for violations\n3. Create report at /root/sg-checkov-report.txt with:\n   - Security Group violations found\n   - Line numbers and remediation steps\n\nUse the awslabs.terraform-mcp-server tools.\"",
     "timestamp": "2025-09-21T00:38:54.347Z"
+  },
+  {
+    "sessionId": "3c212e4b-4935-4f2f-a7ca-cd45c1e895b6",
+    "messageId": 3,
+    "type": "user",
+    "message": "\"Using the Terraform MCP server:\n\n1. Create /root/terraform-project/secure-security-groups.tf with fixed Security Groups\n2. Implement secure patterns:\n   - Web SG: HTTPS/HTTP only, no SSH from internet\n   - Bastion SG: SSH from specific IPs only (10.0.0.0/8)\n   - App SG: Traffic from Web SG only\n   - DB SG: Traffic from App SG only\n3. Run Checkov validation and save results to /root/terraform-project/sg-validation.txt\n\nUse the awslabs.terraform-mcp-server tools.\"",
+    "timestamp": "2025-09-21T00:42:46.110Z"
   }
 ]

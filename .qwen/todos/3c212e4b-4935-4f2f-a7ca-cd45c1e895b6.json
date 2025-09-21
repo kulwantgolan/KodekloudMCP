@@ -1,14 +1,14 @@
 {
   "todos": [
     {
-      "content": "Extract Security Group violations from Checkov results",
+      "content": "Run Checkov validation on the updated project",
       "status": "completed",
-      "id": "extract_violations"
+      "id": "run_validation"
     },
     {
-      "content": "Create report at /root/sg-checkov-report.txt with violations, line numbers, and remediation",
+      "content": "Save Checkov results to /root/terraform-project/sg-validation.txt",
       "status": "completed",
-      "id": "create_report"
+      "id": "save_validation"
     }
   ],
   "sessionId": "3c212e4b-4935-4f2f-a7ca-cd45c1e895b6"

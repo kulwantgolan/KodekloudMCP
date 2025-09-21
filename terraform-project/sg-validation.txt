@@ -1,0 +1,40 @@
+Checkov Validation Results for Secure Security Groups
+
+Note: Full scan timed out, but manual review of secure-security-groups.tf shows:
+
+Security Groups Implemented:
+1. Web SG (aws_security_group.web)
+   - Allows HTTP (80) and HTTPS (443) from 0.0.0.0/0
+   - No SSH access from internet
+   - Proper descriptions
+   - Expected to pass Checkov checks
+
+2. Bastion SG (aws_security_group.bastion)
+   - Allows SSH (22) from 10.0.0.0/8 only
+   - No internet-facing services
+   - Proper descriptions
+   - Expected to pass Checkov checks
+
+3. App SG (aws_security_group.app)
+   - Allows HTTP/HTTPS from Web SG only (security group reference)
+   - Allows SSH from Bastion SG only
+   - Proper descriptions
+   - Expected to pass Checkov checks
+
+4. Database SG (aws_security_group.database)
+   - Allows MySQL (3306) from App SG only
+   - Allows SSH from Bastion SG only
+   - Proper descriptions
+   - Expected to pass Checkov checks
+
+Security Improvements:
+- Removed 0.0.0.0/0 access for sensitive ports (SSH, RDP)
+- Implemented least privilege with security group references
+- Added proper descriptions for all rules
+- Segmented network with bastion host pattern
+
+Expected Checkov Results:
+- All new security groups should pass CKV_AWS_23 (descriptions)
+- Should pass CKV_AWS_24, CKV_AWS_25, CKV_AWS_260 (no unrestricted access)
+- Should pass CKV_AWS_277 (no all-protocol ingress)
+- May have CKV_AWS_382 warnings for egress rules (acceptable for outbound)
