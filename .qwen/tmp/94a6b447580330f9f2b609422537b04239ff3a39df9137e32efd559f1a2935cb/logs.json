@@ -5,5 +5,12 @@
     "type": "user",
     "message": "\"Using the CloudFormation MCP server, analyze AWS Security Groups:\n\n1. List all security groups (AWS::EC2::SecurityGroup) from us-east-1 and save to /root/aws-security-groups.txt\n\n2. For each security group found, get detailed information including:\n   - Ingress rules (inbound traffic)\n   - Egress rules (outbound traffic)\n   - Associated VPC\n   - Save details to /root/sg-details.txt\n\n3. Create a security analysis summary at /root/security-groups-summary.txt that includes:\n   - Total number of security groups\n   - Any security groups with 0.0.0.0/0 access (potential risk)\n   - Security groups allowing SSH (port 22) or RDP (port 3389)\n   - Security groups with all ports open\n\nUse the cfn-mcp-server tools to query these resources.\"",
     "timestamp": "2025-09-21T00:30:37.499Z"
+  },
+  {
+    "sessionId": "3c212e4b-4935-4f2f-a7ca-cd45c1e895b6",
+    "messageId": 1,
+    "type": "user",
+    "message": "\"Using the AWS Documentation MCP server:\n\nSearch for 'EC2 Security Group best practices' and save key findings to /root/sg-best-practices.txt\n\nFocus on least privilege and common anti-patterns.\n\nUse the awslabs.aws-documentation-mcp-server tools.\"",
+    "timestamp": "2025-09-21T00:33:35.393Z"
   }
 ]

@@ -1,0 +1,7 @@
+"Using the AWS Documentation MCP server:
+
+Search for 'EC2 Security Group best practices' and save key findings to /root/sg-best-practices.txt
+
+Focus on least privilege and common anti-patterns.
+
+Use the awslabs.aws-documentation-mcp-server tools."

@@ -1,0 +1,21 @@
+Key Findings on EC2 Security Group Best Practices
+
+Focus: Least Privilege and Common Anti-Patterns
+
+Least Privilege Principles:
+- Only allow the minimum necessary traffic to and from your instances.
+- Restrict inbound and outbound rules to specific IP address ranges (CIDR blocks) or other security groups instead of using 0.0.0.0/0.
+- Use security groups to control access between instances within your VPC.
+- Regularly review and remove unused rules to maintain minimal exposure.
+
+Common Anti-Patterns:
+- Allowing unrestricted access (0.0.0.0/0) to sensitive ports such as SSH (port 22) or RDP (port 3389), which can expose instances to brute-force attacks.
+- Opening all ports (0-65535) in security group rules, creating overly permissive configurations.
+- Relying on the default security group without customizing rules for specific use cases.
+- Not auditing security groups periodically, leading to accumulation of outdated or overly broad rules.
+- Using security groups as a substitute for network ACLs or other security layers, rather than as complementary controls.
+
+Additional Recommendations:
+- Use descriptive names and tags for security groups to improve manageability.
+- Implement automation for security group management to ensure consistency.
+- Monitor security group changes using AWS CloudTrail and Config for compliance.
