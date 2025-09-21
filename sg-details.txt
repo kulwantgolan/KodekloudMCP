@@ -1,0 +1,12 @@
+Security Group: sg-0be0d0dcede418d93
+Group Name: default
+Description: default VPC security group
+VPC ID: vpc-05ebcc900c85f0256
+
+Ingress Rules:
+- Protocol: tcp, Port: 80, Source: 0.0.0.0/0
+
+Egress Rules:
+- Protocol: -1 (all), Port: -1 (all), Destination: 0.0.0.0/0
+
+---

@@ -1,0 +1,10 @@
+AWS Security Groups Analysis Summary
+
+Total Security Groups: 1
+
+Security Groups with 0.0.0.0/0 Access (Potential Risk):
+- sg-0be0d0dcede418d93 (Ingress: TCP port 80 from 0.0.0.0/0; Egress: All protocols/ports to 0.0.0.0/0)
+
+Security Groups Allowing SSH (Port 22) or RDP (Port 3389): 0
+
+Security Groups with All Ports Open (Ingress): 0

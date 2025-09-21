@@ -1,0 +1,17 @@
+"Using the CloudFormation MCP server, analyze AWS Security Groups:
+
+1. List all security groups (AWS::EC2::SecurityGroup) from us-east-1 and save to /root/aws-security-groups.txt
+
+2. For each security group found, get detailed information including:
+   - Ingress rules (inbound traffic)
+   - Egress rules (outbound traffic)
+   - Associated VPC
+   - Save details to /root/sg-details.txt
+
+3. Create a security analysis summary at /root/security-groups-summary.txt that includes:
+   - Total number of security groups
+   - Any security groups with 0.0.0.0/0 access (potential risk)
+   - Security groups allowing SSH (port 22) or RDP (port 3389)
+   - Security groups with all ports open
+
+Use the cfn-mcp-server tools to query these resources."

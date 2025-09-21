@@ -12,7 +12,7 @@
 ~h
 # Command Line History (newest to oldest):
 :wq!
-|2,0,1758413948,,"wq!"
+|2,0,1758414609,,"wq!"
 
 # Search String History (newest to oldest):
 
@@ -52,16 +52,33 @@
 |3,0,9,1,1,0,1758413934,"else"
 
 # File marks:
-'0  105  0  ~/git_prepare_and_push.sh
-|4,48,105,0,1758413948,"~/git_prepare_and_push.sh"
+'0  17  54  ~/prompts/prompt1.txt
+|4,48,17,54,1758414609,"~/prompts/prompt1.txt"
+'1  105  0  ~/git_prepare_and_push.sh
+|4,49,105,0,1758413948,"~/git_prepare_and_push.sh"
 
 # Jumplist (newest first):
+-'  17  54  ~/prompts/prompt1.txt
+|4,39,17,54,1758414609,"~/prompts/prompt1.txt"
+-'  1  0  ~/prompts/prompt1.txt
+|4,39,1,0,1758414600,"~/prompts/prompt1.txt"
+-'  105  0  ~/git_prepare_and_push.sh
+|4,39,105,0,1758413948,"~/git_prepare_and_push.sh"
 -'  105  0  ~/git_prepare_and_push.sh
 |4,39,105,0,1758413948,"~/git_prepare_and_push.sh"
 -'  1  0  ~/git_prepare_and_push.sh
 |4,39,1,0,1758413801,"~/git_prepare_and_push.sh"
+-'  1  0  ~/git_prepare_and_push.sh
+|4,39,1,0,1758413801,"~/git_prepare_and_push.sh"
 
 # History of marks within files (newest to oldest):
+
+> ~/prompts/prompt1.txt
+	*	1758414607	0
+	"	17	54
+	^	17	55
+	.	17	54
+	+	17	54
 
 > ~/git_prepare_and_push.sh
 	*	1758413945	0

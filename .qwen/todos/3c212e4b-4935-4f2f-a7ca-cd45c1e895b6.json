@@ -1,0 +1,15 @@
+{
+  "todos": [
+    {
+      "content": "Analyze security groups for risks and create summary",
+      "status": "completed",
+      "id": "analyze_summary"
+    },
+    {
+      "content": "Save security analysis summary to /root/security-groups-summary.txt",
+      "status": "completed",
+      "id": "save_summary"
+    }
+  ],
+  "sessionId": "3c212e4b-4935-4f2f-a7ca-cd45c1e895b6"
+}
