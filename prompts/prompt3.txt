@@ -1,0 +1,9 @@
+"Using the Terraform MCP server:
+
+1. Analyze Security Groups in /root/terraform-project/main.tf
+2. Run Checkov to scan for violations
+3. Create report at /root/sg-checkov-report.txt with:
+   - Security Group violations found
+   - Line numbers and remediation steps
+
+Use the awslabs.terraform-mcp-server tools."

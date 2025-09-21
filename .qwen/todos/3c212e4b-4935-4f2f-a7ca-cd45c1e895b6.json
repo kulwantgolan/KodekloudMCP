@@ -1,14 +1,14 @@
 {
   "todos": [
     {
-      "content": "Extract key findings on least privilege and anti-patterns",
+      "content": "Extract Security Group violations from Checkov results",
       "status": "completed",
-      "id": "extract_findings"
+      "id": "extract_violations"
     },
     {
-      "content": "Save key findings to /root/sg-best-practices.txt",
+      "content": "Create report at /root/sg-checkov-report.txt with violations, line numbers, and remediation",
       "status": "completed",
-      "id": "save_findings"
+      "id": "create_report"
     }
   ],
   "sessionId": "3c212e4b-4935-4f2f-a7ca-cd45c1e895b6"

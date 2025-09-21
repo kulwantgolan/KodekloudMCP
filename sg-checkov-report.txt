@@ -1,0 +1,48 @@
+Checkov Security Group Violations Report
+
+Resource: aws_security_group.web_server
+File: /main.tf
+
+Violations Found:
+
+1. Check ID: CKV_AWS_23
+   Description: Ensure every security group and rule has a description
+   Line: 26
+   Severity: MEDIUM
+   Remediation: Add description fields to the security group and all ingress/egress rules for better documentation and compliance.
+
+2. Check ID: CKV_AWS_382
+   Description: Ensure no security groups allow egress from 0.0.0.0:0 to port -1
+   Line: 26
+   Severity: MEDIUM
+   Remediation: Restrict egress rules to specific CIDR blocks or security groups instead of allowing all outbound traffic to 0.0.0.0/0.
+
+3. Check ID: CKV_AWS_24
+   Description: Ensure no security groups allow ingress from 0.0.0.0:0 to port 22
+   Line: 26
+   Severity: MEDIUM
+   Remediation: Restrict SSH access (port 22) to specific IP ranges or security groups. Never allow from 0.0.0.0/0 in production.
+
+4. Check ID: CKV_AWS_277
+   Description: Ensure no security groups allow ingress from 0.0.0.0:0 to port -1
+   Line: 26
+   Severity: MEDIUM
+   Remediation: Remove or restrict the ingress rule allowing all protocols (-1) from 0.0.0.0/0. Use specific ports and CIDR blocks.
+
+5. Check ID: CKV_AWS_25
+   Description: Ensure no security groups allow ingress from 0.0.0.0:0 to port 3389
+   Line: 26
+   Severity: MEDIUM
+   Remediation: Restrict RDP access (port 3389) to specific IP ranges or security groups. Never allow from 0.0.0.0/0.
+
+6. Check ID: CKV_AWS_260
+   Description: Ensure no security groups allow ingress from 0.0.0.0:0 to port 80
+   Line: 26
+   Severity: MEDIUM
+   Remediation: Restrict HTTP access (port 80) to specific CIDR blocks or use security groups. Consider using HTTPS (443) instead and implement proper access controls.
+
+Summary:
+- Total SG violations: 6
+- All violations are MEDIUM severity
+- Primary issues: Overly permissive rules allowing access from 0.0.0.0/0, missing descriptions
+- Critical security risks: SSH and RDP exposed to the internet, all protocols allowed inbound

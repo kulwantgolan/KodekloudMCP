@@ -12,5 +12,12 @@
     "type": "user",
     "message": "\"Using the AWS Documentation MCP server:\n\nSearch for 'EC2 Security Group best practices' and save key findings to /root/sg-best-practices.txt\n\nFocus on least privilege and common anti-patterns.\n\nUse the awslabs.aws-documentation-mcp-server tools.\"",
     "timestamp": "2025-09-21T00:33:35.393Z"
+  },
+  {
+    "sessionId": "3c212e4b-4935-4f2f-a7ca-cd45c1e895b6",
+    "messageId": 2,
+    "type": "user",
+    "message": "\"Using the Terraform MCP server:\n\n1. Analyze Security Groups in /root/terraform-project/main.tf\n2. Run Checkov to scan for violations\n3. Create report at /root/sg-checkov-report.txt with:\n   - Security Group violations found\n   - Line numbers and remediation steps\n\nUse the awslabs.terraform-mcp-server tools.\"",
+    "timestamp": "2025-09-21T00:38:54.347Z"
   }
 ]
