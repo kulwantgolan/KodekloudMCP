@@ -1,0 +1,5 @@
+[user]
+	email = kulwantgolan@gmail.com
+	name = kulwantgolan
+[credential]
+	helper = store --file=/root/.git-credentials

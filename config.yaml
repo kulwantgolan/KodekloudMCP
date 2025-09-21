@@ -1,0 +1,18 @@
+model_list:
+  - model_name: claude-sonnet-4-20250514
+    litellm_params:
+      model: openrouter/google/gemini-2.5-pro
+      api_base: os.environ/OPENAI_API_BASE
+      api_key: os.environ/OPENAI_API_KEY
+  - model_name: claude-3-5-haiku-20241022
+    litellm_params:
+      model: openrouter/x-ai/grok-code-fast-1
+      api_base: os.environ/OPENAI_API_BASE
+      api_key: os.environ/OPENAI_API_KEY
+  - model_name: claude-opus-4-1-20250805
+    litellm_params:
+      model: openrouter/moonshotai/kimi-k2-0905
+      api_base: os.environ/OPENAI_API_BASE
+      api_key: os.environ/OPENAI_API_KEY
+general_settings:
+  master_key: sk-test-123
